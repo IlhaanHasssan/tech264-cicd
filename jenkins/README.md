@@ -8,7 +8,7 @@
 
 
 ## ***What is Jenkins?***
-   * Jenkins is an open-source automation server used to build, test, and deploy software. It supports continuous integration and continuous delivery (CI/CD).
+   * Jenkins is an open-source automation server used to build, test, and deploy software. It supports continuous integration and continuous delivery (CI/CD) but it is not exclusive to automating CI/CD pipelines.
 
 ## ***Why use Jenkins? Benefits of using Jenkins? Disadvantages?***
    * ***Benefits:***
