@@ -4,8 +4,8 @@
     - [***Access your Jenkins server***](#access-your-jenkins-server)
     - [***Creating job 1***](#creating-job-1)
     - [***Go to Git Bash Window***](#go-to-git-bash-window)
-  - [***Setting up Job 2 - Merge Job***](#setting-up-job-2---merge-job)
-    - [\*\*\*Job 3 \*\*\*](#job-3-)
+    - [***Setting up Job 2***](#setting-up-job-2)
+    - [***Setting up Job 3***](#setting-up-job-3)
 ## ***How to build a Jenkins pipeline***
  
 ### ***Access your Jenkins server***
@@ -116,11 +116,15 @@
 - `git push --set-upstream origin dev`
 
 
-  ## ***Setting up Job 2 - Merge Job***
+  ### ***Setting up Job 2***
 1. Create a new project, following previous steps such as providing **GitHub** repo links and selecting your **SSH** key.
 2. There are a few changes to be made, highlighted below:
+<br>
+
  ![alt text](image-15.png)
  ![alt text](image-16.png)
+
+<br> 
 1. Add a build step, with the following commands inside:
  
 ```bash
@@ -137,7 +141,7 @@ git push origin main
 
 <br> 
 
-### ***Job 3 ***
+### ***Setting up Job 3***
 - Re-create steps taken in Job 2 except create a **build step** where you select **execute shell** and insert this script
 ```bash
 rsync -avz -e "ssh -o StrictHostKeyChecking=no" app ubuntu@54.170.230.121:~
